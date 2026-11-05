@@ -1,0 +1,6 @@
+title: OpenLens
+description: An open-source iPhone camera that uploads straight to your Google Drive.
+theme: jekyll-theme-minimal
+exclude:
+  - README.md
+  - CLAUDE.md

@@ -1,11 +1,15 @@
 # open-lens-site
 
-_Short description of what this is._
+Public homepage and privacy policy for the OpenLens iPhone app, served by
+GitHub Pages at <https://jbiz25.github.io/open-lens-site/>.
 
-## Setup
+- `index.md` is the homepage.
+- `privacy.md` is the privacy policy
+  (<https://jbiz25.github.io/open-lens-site/privacy.html>).
 
-_How to set up locally._
+These two URLs are registered on the app's Google OAuth consent screen, so do
+not rename the repo or the files without updating them there.
 
-## Usage
+## Editing
 
-_Common commands._
+Edit the Markdown and push to `main`; Pages rebuilds in about a minute.
