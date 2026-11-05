@@ -4,26 +4,27 @@ title: OpenLens privacy policy
 
 # OpenLens privacy policy
 
-Last updated: 4 November 2026
+Last updated: 5 November 2026
 
-OpenLens is an iPhone camera app that uploads the photos you take to your own
-Google Drive. This policy explains what data the app handles and where it goes.
+OpenLens is an iPhone camera app that uploads the photos and videos you take to
+your own Google Drive. This policy explains what data the app handles and where it goes.
 
 ## The short version
 
 - OpenLens has **no server and no account system** of its own. The developer
   never receives your photos, your Google account details, or any usage data.
-- Your photos go from your phone directly to **your** Google Drive, and nowhere
-  else.
+- Your photos and videos go from your phone directly to **your** Google Drive,
+  and nowhere else.
 - The app contains no analytics, advertising, or tracking code.
 
 ## Data the app handles
 
-**Photos you take.** Each photo is saved in the app's private storage on your
+**Photos and videos you take.** Each photo or video is saved in the app's private storage on your
 phone until it has been uploaded to Google Drive, then the local copy is
 deleted. If you turn on "Also save to Photos", a copy is also written to your
-Apple Photos library. Photos include whatever metadata the camera records,
-such as date and device model.
+Apple Photos library. Videos include the sound recorded by the microphone.
+Files include whatever metadata the camera records, such as date and device
+model.
 
 **Google account access.** When you sign in, Google gives the app an access
 token and a refresh token. These are stored only in the iOS Keychain on your
@@ -41,7 +42,7 @@ OpenLens requests a single Google OAuth scope:
 With it the app can:
 
 - create the upload folder (and daily subfolders) in your Drive;
-- upload the photos you take into those folders;
+- upload the photos and videos you take into those folders;
 - look up folders that OpenLens itself created earlier.
 
 It **cannot** see, read, modify or delete any other file or folder in your
@@ -56,16 +57,18 @@ including the Limited Use requirements.
 
 ## Permissions on your phone
 
-- **Camera**: to take photos.
+- **Camera**: to take photos and videos.
+- **Microphone** (asked the first time you switch to video): to record sound
+  with videos. If you decline, videos are recorded without sound.
 - **Add to Photos** (only if you enable "Also save to Photos"): to save a copy.
 - **Notifications** (only if you enable upload-failure alerts): to tell you
   when a background upload failed. These are generated on the phone itself.
 
 ## Retention and deletion
 
-- Photos waiting to upload stay on your phone until they upload or you delete
+- Photos and videos waiting to upload stay on your phone until they upload or you delete
   them in the Uploads screen. Deleting the app removes them.
-- Uploaded photos live in your Google Drive and are governed by your Google
+- Uploaded photos and videos live in your Google Drive and are governed by your Google
   account. Delete them there as you would any other file.
 - To remove the app's access entirely, sign out in the app or remove OpenLens
   at <https://myaccount.google.com/permissions>.

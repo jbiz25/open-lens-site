@@ -4,19 +4,20 @@ title: OpenLens
 
 # OpenLens
 
-OpenLens is a free, open-source iPhone camera app. Every photo you take is
-uploaded straight to a folder in **your own Google Drive** and, unless you ask
+OpenLens is a free, open-source iPhone camera app. Every photo or video you
+take is uploaded straight to a folder in **your own Google Drive** and, unless you ask
 otherwise, never lands in your Photos library. It is useful for job-site
 photos, receipts, inventory and anything else you want filed in Drive instead
 of mixed into your camera roll.
 
 ## What it does
 
-- Takes a photo and queues it on the phone, so nothing is lost offline.
+- Takes photos and videos and queues them on the phone, so nothing is lost
+  offline.
 - Uploads it to a Drive folder you name, optionally in a subfolder per day.
 - Finishes uploads in the background, even if you leave or close the app.
-- Lets you choose JPEG or HEIC, full or reduced size, Wi-Fi only, and whether
-  to also keep a copy in Photos.
+- Lets you choose JPEG or HEIC photos, 1080p or 4K video, Wi-Fi only, and
+  whether to also keep a copy in Photos.
 
 ## How it uses your Google account
 
