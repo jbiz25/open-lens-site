@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+credentials.json
+google-credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Logs / editor
+*.log
+.vscode/
+.idea/
+*.swp
+*~
