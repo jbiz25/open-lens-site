@@ -16,6 +16,7 @@ of mixed into your camera roll.
   offline.
 - Uploads into folders you choose on the spot, for example one per site and
   one per pump, named by typing, speaking or from the nearest address.
+- Adds photos and videos already in your library to the same folders.
 - Keeps the photo's full metadata and adds GPS location, altitude and compass
   direction.
 - Finishes uploads in the background, even if you leave or close the app.

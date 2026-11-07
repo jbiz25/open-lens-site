@@ -4,7 +4,7 @@ title: OpenLens privacy policy
 
 # OpenLens privacy policy
 
-Last updated: 7 November 2026
+Last updated: 8 November 2026
 
 OpenLens is an iPhone camera app that uploads the photos and videos you take to
 your own Google Drive. This policy explains what data the app handles and where it goes.
@@ -30,6 +30,11 @@ model.
 token and a refresh token. These are stored only in the iOS Keychain on your
 phone and are used only to talk to Google Drive on your behalf. Signing out in
 the app deletes them from the phone and asks Google to revoke them.
+
+**Photos you add from your library.** If you use "Add from Photos", Apple's
+photo picker lets the app see only the items you select; it gets no other
+access to your library. Those items are uploaded exactly as stored, with the
+metadata they already contain, such as date, camera details and location.
 
 **Location.** Unless you turn off "Save location" in the app's settings, the
 app reads your location while the camera is open. It writes the coordinates,
@@ -77,6 +82,8 @@ including the Limited Use requirements.
 - **Microphone** (asked the first time you switch to video): to record sound
   with videos and to hear spoken folder names. If you decline, videos are
   recorded without sound.
+- **Photos library**: not needed for "Add from Photos", which uses Apple's
+  picker. Only asked for (add-only) if you turn on "Also save to Photos".
 - **Location** (While Using the App): to save where each photo and video was
   taken and suggest nearby folders.
 - **Speech recognition** (only if you use the microphone button): to turn a
