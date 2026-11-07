@@ -14,7 +14,10 @@ of mixed into your camera roll.
 
 - Takes photos and videos and queues them on the phone, so nothing is lost
   offline.
-- Uploads it to a Drive folder you name, optionally in a subfolder per day.
+- Uploads into folders you choose on the spot, for example one per site and
+  one per pump, named by typing, speaking or from the nearest address.
+- Keeps the photo's full metadata and adds GPS location, altitude and compass
+  direction.
 - Finishes uploads in the background, even if you leave or close the app.
 - Lets you choose JPEG or HEIC photos, 1080p or 4K video, Wi-Fi only, and
   whether to also keep a copy in Photos.

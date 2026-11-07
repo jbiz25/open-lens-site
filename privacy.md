@@ -4,7 +4,7 @@ title: OpenLens privacy policy
 
 # OpenLens privacy policy
 
-Last updated: 5 November 2026
+Last updated: 7 November 2026
 
 OpenLens is an iPhone camera app that uploads the photos and videos you take to
 your own Google Drive. This policy explains what data the app handles and where it goes.
@@ -31,6 +31,20 @@ token and a refresh token. These are stored only in the iOS Keychain on your
 phone and are used only to talk to Google Drive on your behalf. Signing out in
 the app deletes them from the phone and asks Google to revoke them.
 
+**Location.** Unless you turn off "Save location" in the app's settings, the
+app reads your location while the camera is open. It writes the coordinates,
+altitude and compass direction into each photo and video, as the iPhone camera
+does, and adds them with the nearest street address to the file's description
+in your Google Drive. To find that address, the app sends the coordinates to
+Apple's location service. The app also remembers on your phone roughly where
+you last used each folder, so it can suggest the right folder when you return.
+Location is never sent to the developer.
+
+**Folder names you speak.** If you use the microphone button to name a folder,
+speech is recognized on your iPhone and the audio is not sent anywhere,
+including to Apple. Where the phone cannot do this on the device, the button is
+hidden.
+
 **Settings.** Your preferences (folder name, photo format and so on) are
 stored on your phone.
 
@@ -41,8 +55,10 @@ OpenLens requests a single Google OAuth scope:
 
 With it the app can:
 
-- create the upload folder (and daily subfolders) in your Drive;
-- upload the photos and videos you take into those folders;
+- create the upload folder, daily subfolders, and the folders you name in the
+  app in your Drive;
+- upload the photos and videos you take into those folders, with their date,
+  location and folder in the file's description and properties;
 - look up folders that OpenLens itself created earlier.
 
 It **cannot** see, read, modify or delete any other file or folder in your
@@ -59,7 +75,12 @@ including the Limited Use requirements.
 
 - **Camera**: to take photos and videos.
 - **Microphone** (asked the first time you switch to video): to record sound
-  with videos. If you decline, videos are recorded without sound.
+  with videos and to hear spoken folder names. If you decline, videos are
+  recorded without sound.
+- **Location** (While Using the App): to save where each photo and video was
+  taken and suggest nearby folders.
+- **Speech recognition** (only if you use the microphone button): to turn a
+  spoken folder name into text, on the phone.
 - **Add to Photos** (only if you enable "Also save to Photos"): to save a copy.
 - **Notifications** (only if you enable upload-failure alerts): to tell you
   when a background upload failed. These are generated on the phone itself.
