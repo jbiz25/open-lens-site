@@ -21,7 +21,9 @@ your own Google Drive. This policy explains what data the app handles and where 
 
 **Photos and videos you take.** Each photo or video is saved in the app's private storage on your
 phone until it has been uploaded to Google Drive, then the local copy is
-deleted. If you turn on "Also save to Photos", a copy is also written to your
+deleted. A small preview image of each one (without location or other
+metadata) stays in the app so the Uploads list can show it, until you clear it
+from that list. If you turn on "Also save to Photos", a copy is also written to your
 Apple Photos library. Videos include the sound recorded by the microphone.
 Files include whatever metadata the camera records, such as date and device
 model.
@@ -64,7 +66,10 @@ With it the app can:
   app in your Drive;
 - upload the photos and videos you take into those folders, with their date,
   location and folder in the file's description and properties;
-- look up folders that OpenLens itself created earlier.
+- look up folders that OpenLens itself created earlier;
+- download a photo or video that OpenLens uploaded, only when you open it in
+  the app's Uploads list, to show it to you on your phone. The downloaded copy
+  is temporary and is deleted when you close it.
 
 It **cannot** see, read, modify or delete any other file or folder in your
 Drive. The app does not read your Google profile, email address or contacts.
@@ -96,6 +101,8 @@ including the Limited Use requirements.
 
 - Photos and videos waiting to upload stay on your phone until they upload or you delete
   them in the Uploads screen. Deleting the app removes them.
+- Small previews of uploaded items stay on your phone until you delete them in
+  the Uploads screen (swipe to delete, or "Clear completed"), or delete the app.
 - Uploaded photos and videos live in your Google Drive and are governed by your Google
   account. Delete them there as you would any other file.
 - To remove the app's access entirely, sign out in the app or remove OpenLens
