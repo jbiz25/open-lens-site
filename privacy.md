@@ -54,6 +54,10 @@ does, and adds them with the nearest street address to the file's description
 in your Google Drive. To find that address, the app sends the coordinates to
 Apple's location service. The app also remembers on your phone roughly where
 you last used each folder, so it can suggest the right folder when you return.
+In pump audit mode, each pump's position is worked out from where its photos
+were taken (or where you move its pin) and saved in the audit file and the
+pump's report in your Google Drive. The pump map shows them on Apple Maps,
+which loads the map for the area on screen from Apple, as any map app does.
 Location is never sent to the developer.
 
 **Folder names and readings you speak.** If you use the microphone button to
