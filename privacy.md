@@ -96,6 +96,15 @@ uploaded next to the recording and kept in `audit.json`. The phone keeps its
 copy of the recording until the audit is finished or discarded. The app asks
 you to confirm that everyone agreed to be recorded before it starts.
 
+**Videos in an audit.** A video you record for a pump in audit mode is
+uploaded to that pump's Drive folder like any video. On your iPhone, the app
+also reads nameplate text off its frames (to fill empty plate fields) and
+transcribes its sound with Apple's on-device speech recognition; nothing is
+sent to Apple or the developer for that. The transcript is uploaded next to
+the video and kept in `audit.json`, with any readings heard in it, which are
+only filled in if you tap Use. The phone's working copy of the video is
+deleted once it has been read.
+
 **Settings.** Your preferences (folder name, photo format and so on) are
 stored on your phone.
 
