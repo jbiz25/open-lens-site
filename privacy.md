@@ -4,7 +4,7 @@ title: OpenLens privacy policy
 
 # OpenLens privacy policy
 
-Last updated: 10 November 2026
+Last updated: 11 November 2026
 
 OpenLens is an iPhone camera app that uploads the photos and videos you take to
 your own Google Drive. This policy explains what data the app handles and where it goes.
@@ -15,6 +15,9 @@ your own Google Drive. This policy explains what data the app handles and where 
   never receives your photos, your Google account details, or any usage data.
 - Your photos and videos go from your phone directly to **your** Google Drive,
   and nowhere else.
+- One optional feature, off unless you add your own OpenRouter key, sends a
+  pump curve sheet or a pump's make and model to an AI service (see "AI curve
+  help" below).
 - The app contains no analytics, advertising, or tracking code.
 
 ## Data the app handles
@@ -31,9 +34,13 @@ Files include whatever metadata the camera records, such as date and device
 model.
 
 **Google account access.** When you sign in, Google gives the app an access
-token and a refresh token. These are stored only in the iOS Keychain on your
-phone and are used only to talk to Google Drive on your behalf. Signing out in
-the app deletes them from the phone and asks Google to revoke them.
+token and a refresh token, plus your Google account's email address (and, for
+a Google Workspace account, its organization's domain). These are stored only
+in the iOS Keychain on your phone. The tokens are used only to talk to Google
+Drive on your behalf. The email address is shown in Settings and its domain is
+checked on the phone to decide whether to show tools made for a particular
+organization; it is never sent anywhere. Signing out in the app deletes all of
+it from the phone and asks Google to revoke the tokens.
 
 **Photos you add from your library.** If you use "Add from Photos", Apple's
 photo picker lets the app see only the items you select; it gets no other
@@ -54,12 +61,30 @@ speech is recognized on your iPhone and the audio is not sent anywhere,
 including to Apple. Where the phone cannot do this on the device, the button is
 hidden.
 
-**Pump audits.** In audit mode, what you type (site and contact details,
+**Pump audits.** Audit mode appears only when you are signed in with a Google
+account of an organization OpenLens has been set up for. In audit mode, what you type (site and contact details,
 readings, checks and notes) is saved on your phone and uploaded to the
 audit's folder in your Google Drive as `audit.json`, next to the photos.
 The text on pump and motor nameplate photos is read on your iPhone with
 Apple's built-in text recognition, to fill in the plate fields; nothing is
 sent anywhere for that. The text read is kept in `audit.json`.
+
+**AI curve help (optional, off by default).** If you type your own
+[OpenRouter](https://openrouter.ai) API key into Settings, three buttons
+appear, two of them in the curve tracer. "Read the curve with AI" sends the picture of the curve
+sheet you opened, and the pump's manufacturer, model, impeller size, speed and
+rated flow and head, to OpenRouter, which passes them to the AI model chosen in
+Settings. "Search the web for the sheet" sends the same pump details (no
+picture) to OpenRouter, which runs a web search with them. "Read the plates
+with AI" on the Pump tab sends that pump's nameplate photos, for plates the
+phone could not read by itself. Nothing is sent
+until you tap one of those three buttons, and nothing else from the audit (site,
+contacts, photos, location, readings) is ever included. Opening a search result
+downloads that file straight from the website it is on. OpenRouter and the
+model's provider handle what they receive under their own policies; providers
+of free models may keep prompts and use them to improve their models. The key
+is stored only in the iOS Keychain on your phone and is removed with "Remove
+the key". The developer never sees the key or anything sent with it.
 
 **Interviews you record.** If you record an interview in an audit, the audio
 is saved on your phone and uploaded to the audit's Drive folder. It is
@@ -75,10 +100,13 @@ stored on your phone.
 
 ## Google user data
 
-OpenLens requests a single Google OAuth scope:
-`https://www.googleapis.com/auth/drive.file`.
+OpenLens requests these Google OAuth scopes:
 
-With it the app can:
+- `https://www.googleapis.com/auth/drive.file`, for Google Drive;
+- `openid` and `email`, to read the signed-in account's email address and,
+  for Google Workspace accounts, its organization's domain.
+
+With them the app can:
 
 - create the upload folder, daily subfolders, and the folders you name in the
   app in your Drive;
@@ -89,8 +117,13 @@ With it the app can:
   the app's Uploads list, to show it to you on your phone. The downloaded copy
   is temporary and is deleted when you close it.
 
+- read the email address of the account you signed in with, to show it in
+  Settings and to check on the phone whether it belongs to an organization the
+  app's company tools are made for.
+
 It **cannot** see, read, modify or delete any other file or folder in your
-Drive. The app does not read your Google profile, email address or contacts.
+Drive. The app does not read your name, profile picture or contacts, and your
+email address never leaves your phone.
 
 Google user data is not shared with, transferred to, or sold to anyone. It is
 not used for advertising, and it is not used to develop, improve or train
