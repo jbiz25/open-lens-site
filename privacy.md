@@ -4,7 +4,7 @@ title: OpenLens privacy policy
 
 # OpenLens privacy policy
 
-Last updated: 11 November 2026
+Last updated: 12 November 2026
 
 OpenLens is an iPhone camera app that uploads the photos and videos you take to
 your own Google Drive. This policy explains what data the app handles and where it goes.
@@ -56,10 +56,11 @@ Apple's location service. The app also remembers on your phone roughly where
 you last used each folder, so it can suggest the right folder when you return.
 Location is never sent to the developer.
 
-**Folder names you speak.** If you use the microphone button to name a folder,
-speech is recognized on your iPhone and the audio is not sent anywhere,
-including to Apple. Where the phone cannot do this on the device, the button is
-hidden.
+**Folder names and readings you speak.** If you use the microphone button to
+name a folder, or "Say readings" in a pump audit, speech is recognized on your
+iPhone and the audio is not sent anywhere, including to Apple, and is not kept.
+Readings you then choose to use are saved in the audit like typed ones. Where
+the phone cannot do this on the device, the button is hidden.
 
 **Pump audits.** Audit mode appears only when you are signed in with a Google
 account of an organization OpenLens has been set up for. In audit mode, what you type (site and contact details,
@@ -165,6 +166,10 @@ including the Limited Use requirements.
   in progress stay until that audit is finished.
 - Interview recordings stay on your phone until the audit is finished or
   discarded (the uploaded copy is in Drive).
+- When a pump audit is finished, a copy of it (what was typed, not the photos
+  or recordings) stays on your phone so the next visit to the same site can
+  start from it. Only the latest audit per site is kept, for at most 30 sites.
+  "Forget past audits" in Settings, or deleting the app, removes them.
 - Uploaded photos and videos live in your Google Drive and are governed by your Google
   account. Delete them there as you would any other file.
 - To remove the app's access entirely, sign out in the app or remove OpenLens
