@@ -33,6 +33,12 @@ instead so it isn't lost, and tells you. Videos include the sound recorded by th
 Files include whatever metadata the camera records, such as date and device
 model.
 
+**Upload log.** The app keeps a short text log on your phone of what the
+upload queue did (file names, folder names, the type of network, and any
+error Google Drive returned), so a stuck upload can be explained. It never
+leaves your phone unless you share it yourself from Settings › Upload log,
+and you can clear it there.
+
 **Google account access.** When you sign in, Google gives the app an access
 token and a refresh token, plus your Google account's email address (and, for
 a Google Workspace account, its organization's domain). These are stored only
@@ -56,7 +62,8 @@ Apple's location service. The app also remembers on your phone roughly where
 you last used each folder, so it can suggest the right folder when you return.
 In pump audit mode, each pump's position is worked out from where its photos
 were taken (or where you move its pin) and saved in the audit file and the
-pump's report in your Google Drive. The pump map shows them on Apple Maps,
+pump's report in your Google Drive. If Precise Location is off for OpenLens,
+starting an audit asks iOS to allow it for that session only. The pump map shows them on Apple Maps,
 which loads the map for the area on screen from Apple, as any map app does.
 Location is never sent to the developer.
 
