@@ -74,7 +74,10 @@ Readings you then choose to use are saved in the audit like typed ones. Where
 the phone cannot do this on the device, the button is hidden.
 
 **Pump audits.** Audit mode appears only when you are signed in with a Google
-account of an organization OpenLens has been set up for. In audit mode, what you type (site and contact details,
+account of an organization OpenLens has been set up for, or after entering a
+staff username and password in Settings. That username and password are
+checked on your phone against a scrambled copy built into the app; they are
+never sent anywhere, and only the username is kept. In audit mode, what you type (site and contact details,
 readings, checks and notes) is saved on your phone and uploaded to the
 audit's folder in your Google Drive as `audit.json`, next to the photos.
 The text on pump and motor nameplate photos is read on your iPhone with
