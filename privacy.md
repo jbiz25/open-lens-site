@@ -4,7 +4,7 @@ title: OpenLens privacy policy
 
 # OpenLens privacy policy
 
-Last updated: 12 November 2026
+Last updated: 14 November 2026
 
 OpenLens is an iPhone camera app that uploads the photos and videos you take to
 your own Google Drive. This policy explains what data the app handles and where it goes.
@@ -59,7 +59,9 @@ altitude and compass direction into each photo and video, as the iPhone camera
 does, and adds them with the nearest street address to the file's description
 in your Google Drive. To find that address, the app sends the coordinates to
 Apple's location service. The app also remembers on your phone roughly where
-you last used each folder, so it can suggest the right folder when you return.
+you last used each folder, so it can switch to the right folder when you return,
+and names a new folder after the place or street address when you are somewhere
+new.
 In pump audit mode, each pump's position is worked out from where its photos
 were taken (or where you move its pin) and saved in the audit file and the
 pump's report in your Google Drive. If Precise Location is off for OpenLens,
