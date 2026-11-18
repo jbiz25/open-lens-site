@@ -32,6 +32,13 @@ talks directly to Google from your phone.
 
 See the [privacy policy](privacy.md) for details.
 
+## Support
+
+Questions, problems or requests: [open an issue](https://github.com/jbiz25/open-lens-site/issues)
+and you will get an answer there. Please include your iPhone model, the iOS
+version and what you were doing when something went wrong. Never post
+passwords or private photos in an issue.
+
 ## Licence
 
 MIT. Provided as is, without warranty.

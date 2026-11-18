@@ -212,5 +212,6 @@ with a new date.
 
 ## Contact
 
-Questions about this policy can be sent to the support email address shown on
-the Google sign-in screen for OpenLens.
+Questions about this policy can be asked by
+[opening an issue](https://github.com/jbiz25/open-lens-site/issues), or sent to
+the support email address shown on the Google sign-in screen for OpenLens.
